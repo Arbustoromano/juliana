@@ -1,0 +1,163 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1a1a1a;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-title {
+  font-family: cursive;
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+}
+
+.hero-logo {
+  font-size: 8rem;
+  color: #00755E;
+  font-weight: bold;
+  margin: 0;
+  z-index: 2;
+}
+
+.cart-icon {
+  width: 200px;
+  height: 200px;
+  background-image: url('../img/cart.png');
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(5px 5px 5px black);
+  margin-top: -50px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #00755E;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transform: rotate(-10deg);
+}
+
+/* Produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.produto {
+  background-color: black;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Formulários (Login, Cadastro, Recuperar, Contato) */
+.login-container,
+.cadastro-container,
+.recuperar-container,
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.logo-titulo {
+  font-size: 5rem;
+  color: #00755E;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-form,
+.cadastro-form,
+.recuperar-form,
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.login-form input,
+.cadastro-form input,
+.recuperar-form input,
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.login-form button,
+.cadastro-form button,
+.recuperar-form button,
+.contato-form button {
+  padding: 12px;
+  background-color: #00755E;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-links {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-links a {
+  color: #00755E;
+  text-decoration: none;
+  font-weight: bold;
+}
